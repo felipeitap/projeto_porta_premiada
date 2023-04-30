@@ -1,0 +1,61 @@
+.dor_area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--width-dor-area);
+  height: var(--height-dor-area);
+  margin: 5px;
+}
+
+.dor_frame {
+  display: flex;
+  flex-grow: 1;
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
+  width: 90%;
+}
+
+.dor {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  background-color: chocolate;
+  padding: 15px;
+}
+
+.dor_number {
+  font-size: 3rem;
+}
+
+.dor_knob {
+  position: absolute;
+  align-self: flex-end;
+  top: calc(0.45 * var(--height-dor-area));
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: brown;
+}
+
+.floor {
+  height: 10px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.selected {
+  border-left: 5px solid yellow;
+  border-top: 5px solid yellow;
+  border-right: 5px solid yellow;
+}
+
+.selected .dor_number {
+  color: yellow;
+}
+
+.selected .dor_knob {
+  background-color: yellow;
+}
